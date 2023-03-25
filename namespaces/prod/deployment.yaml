@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+metadata: 
+   name: orders
+   namespace: prod
+kind: Deployment
+spec:
+   selector:
+      matchLabels:
+         app: orders
+   replicas: 3
+   template:
+     metadata:
+        labels:
+           app: orders
+     spec:
+       containers:
+       - name: orders
+         image: gcr.io/gkemhcs-eswari/posts
+         ports:
+         - containerPort: 8080
