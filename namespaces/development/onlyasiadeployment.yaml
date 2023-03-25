@@ -3,7 +3,7 @@ metadata:
    name: orders-asia
    namespace: development
    annotations:
-     client.lifecycle.config.k8s.io/mutation: ignore
+     configmanagement.gke.io/cluster-selector: asia-selector
 kind: Deployment
 spec:
    selector:
