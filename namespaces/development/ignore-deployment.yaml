@@ -3,7 +3,7 @@ metadata:
    name: orders-ignore
    namespace: development
    annotations:
-      client.lifecycle.config.k8s.io/deletion: detach
+      configmanagement.gke.io/managed: enabled
    labels:
      type: ignore
 kind: Deployment
