@@ -1,0 +1,12 @@
+apiVersion: configmanagement.gke.io/v1
+kind: NamespaceSelector
+metadata:
+   name: selector-1
+spec:
+  selector:
+    matchExpressions:
+    - key: stage
+      operator: In
+      values:
+      - development
+      - staging

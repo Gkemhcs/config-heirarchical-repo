@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+   name: configmap-2
+   annotations:
+     configmanagement.gke.io/namespace-selector: selector-1
+data:
+    type: development 
