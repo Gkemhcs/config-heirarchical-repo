@@ -5,3 +5,7 @@ metadata:
 data:
     color: green
     food : rice
+    data: |
+       name=koti
+       age=19
+       profession=cloudengineer
