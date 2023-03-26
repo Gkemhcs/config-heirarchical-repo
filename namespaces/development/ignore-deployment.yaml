@@ -4,12 +4,15 @@ metadata:
    namespace: development
    annotations:
       client.lifecycle.config.k8s.io/deletion: detach
+   labels:
+     type: ignore
 kind: Deployment
 spec:
    selector:
       matchLabels:
          app: orders
-   replicas: 4
+         
+   replicas: 5
    template:
      metadata:
         labels:
