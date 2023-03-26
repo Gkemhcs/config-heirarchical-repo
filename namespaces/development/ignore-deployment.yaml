@@ -3,7 +3,7 @@ metadata:
    name: orders-ignore
    namespace: development
    annotations:
-      configmanagement.gke.io/managed: enabled
+      configmanagement.gke.io/managed: disabled
    labels:
      type: ignore
 kind: Deployment
@@ -12,7 +12,7 @@ spec:
       matchLabels:
          app: orders
          
-   replicas: 5
+   replicas: 3
    template:
      metadata:
         labels:
