@@ -1,0 +1,10 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRestrictNamespaces
+metadata:
+   name: restrict-namespace
+spec:
+    parameters:
+      restrictedNamespaces:
+      - "kube-engine"
+      - "cloud"
+      - "gke"
