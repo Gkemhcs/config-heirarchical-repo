@@ -3,6 +3,7 @@ kind: K8sRestrictNamespaces
 metadata:
    name: restrict-namespace
 spec:
+    enforcementAction: deny
     parameters:
       restrictedNamespaces:
       - "kube-engine"
